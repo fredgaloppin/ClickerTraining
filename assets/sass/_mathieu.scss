@@ -1,0 +1,54 @@
+#mathieu {
+  cursor: url('../img/wand.png') 4 4,auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-star;
+  flex-direction: column;
+  margin-left: 30px;
+
+  div{
+    height: 20%;
+    background-size: cover;
+    background-position: center center ;
+    margin: 0.5rem;
+    border-radius: 10px;
+    position: relative;
+    width: 332px;
+    img{
+      width:12%;
+      padding-left: .7em;
+      padding-top: .5em;
+      justify-content: center;
+    }
+  }
+    #ronSection  {
+        background: {
+            image: url("../img/bgYellow.png");
+          }
+    }
+
+    #hermioneSection {
+      background: {
+          image: url("../img/bgRed.png");
+          
+        }
+  }
+
+    #harrySection {
+      background: {
+        image: url("../img/bgBlue.png");
+        
+      }
+  }
+
+    #dobbySection {
+        background: {
+          image: url("../img/bgGreen.png");
+      
+    }
+  }
+
+  height: 100%;
+  width: 33%;
+  
+}

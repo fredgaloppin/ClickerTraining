@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a cookie game.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Cookie Clicker Game</title>
+</head>
+<audio id="player" src="assets/Harry Potter Theme Song.mp3" autoplay loop></audio>
+<button id="playpause">
+    <!--you can style the content with anything!-->
+</button>
+<header>
+<header>
+    <h1>
+        Harry Clicker
+    </h1>
+</header>
+
+
+<main id="container">
+    <!--Left Section-->
+    <section id="mathieu">
+        <div id="ronSection"></div>
+
+        <div id="hermioneSection"></div>
+
+        <div id="harrySection"></div>
+
+        <div id="dobbySection"></div>
+    </section>
+
+    <!--Middle Section-->
+    <section class="middle">
+        <button class="dumbledore" id="click">
+            <img class="dumbleclick" src="./assets/img/dumbledore.png" alt="dumbledore" />
+        </button>
+        <div class="wordScore">
+            <p class="word">score : </p>
+            <p id="score">0.0</p>
+        </div>
+
+        <div class="clockDown"></div>
+    </section>
+
+    <!--Right Section-->
+    <section class="buttons">
+        <div>
+            <img class="owl" src="assets/img/owl.png" alt="owl" />
+
+            <button class="btn clickModif" id="timedCount" title="Double the click (10 sec)">
+                <span class="title">Bonus x20</span>
+                <span class="price">price: <span>500</span></span>
+                <span class="compteur" hidden> 0</span>
+            </button>
+
+            <button class="btn clickModif" id="buttonX2" title="Double the click">
+                <span class="title">Click x2</span>
+                <span class="price"> price: <span>50</span></span>
+                <span class="compteur" hidden> 0</span>
+            </button>
+
+
+            <button class="btn clickModif" id="auto-clicker_ron" title="Add a ron to help you (0.1 click per second)">
+                <span class="title"> <img class="bonhomme" src="assets/img/ron.png" alt="ron weasley" /> Bonus</span>
+                <span class="price"> price: <span>25</span></span>
+                <span class="compteur"> 0</span>
+            </button>
+
+            <button class="btn clickModif" id="auto-clicker_hermione"
+                title="Add a hermione to help you (0.5 click per second)">
+                <span class="title"> <img class="bonhomme" src="assets/img/hermione.png" alt="hermione granger" />
+                    Bonus</span>
+                <span class="price"> price: <span>300</span></span>
+                <span class="compteur"> 0</span>
+            </button>
+
+            <button class="btn clickModif" id="auto-clicker_harry" title="Add a harry to help you (1 click per second)">
+                <span class="title"> <img class="bonhomme" src="assets/img/harry.png" alt="harry potter" />
+                    Bonus</span>
+                <span class="price"> price: <span>1000</span></span>
+                <span class="compteur"> 0</span>
+            </button>
+
+            <button class="btn clickModif" id="auto-clicker_dobby" title="Add a dobby to help you (2 click per second)">
+                <span class="title"> <img class="bonhomme" src="assets/img/dobby.png" alt="dobby" /> Bonus</span>
+                <span class="price"> price: <span>2000</span></span>
+                <span class="compteur"> 0</span>
+            </button>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <img class="house" src="assets/img/gryffondor.PNG" alt="gryffondor" />
+    <img class="house" src="assets/img/slytherin.png" alt="slytherin" />
+    <img class="house" src="assets/img/ravenclaw.PNG" alt="ravenclaw" />
+    <img class="house" src="assets/img/hufflepuff.png" alt="hufflepuff" />
+</footer>
+
+<script src="./assets/js/index.js"></script>
+</body>
+
+</html>

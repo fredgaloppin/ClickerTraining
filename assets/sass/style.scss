@@ -1,0 +1,156 @@
+@font-face
+{
+    font: {
+        family: "Harry P";
+        size: normal;
+        weight: normal;
+    }
+    src: url("../fonts/HarryP.TTF") format("truetype");
+}
+
+@import "mathieu";
+@import "middle";
+@import "button";
+
+$red: #7d2430;
+$yellow: #efc94a;
+
+
+*,
+*::before,
+*::after
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-weight: normal;
+  font-family: 'Harry P', sans-serif;
+}
+
+body
+{
+    background: {
+        color: $red;
+        image: url("../img/hogwarts.png");
+        size: cover;
+        repeat: no-repeat;
+    };
+    font-family: "Harry P", sans-serif;
+    cursor: url('../img/wand.png'),auto;
+    overflow: hidden;
+}
+
+h1
+{
+    color:  $yellow;
+    font-size: 7em;
+    letter-spacing: 0.2em;
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-bottom: 1px solid $yellow;
+
+}
+
+#container
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;  
+    margin: 0;
+    padding: 0;  
+    height: 60vh;
+}
+
+footer
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.house
+{
+    height: 8vh;
+    margin: 10px 10px;
+    border: 2px solid $yellow;
+    border-radius: 35px;
+}
+#playpause{
+    background-color: $red;
+    border: 2px solid $yellow;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: absolute;
+    bottom: 60px;
+    left: 125px;
+    cursor: url("../img/magicWand.png"), auto;
+    outline: none;
+    img {
+        height: 40px;
+    }
+  }
+  @media only screen and (max-width: 1045px) {
+    body {
+        h1{
+            font-size: 4em;
+        }
+        #mathieu {
+            display: none;
+        }
+        #playpause {
+            bottom: auto;
+            left: 10px;
+        }
+        .buttons{
+            width: 33%;
+            div{
+                background: none;
+                border: none;
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background: {
+            color: $red;
+            image: url("../img/hogwarts.png");
+            size: 360px 255px;
+        };
+        main {
+            background-color: #813939ff;
+        }
+        .middle {
+            .dumbledore {
+                left: 90%;
+            }
+            .dumbleclick {
+                height: 40vh;
+            }
+            .wordScore {
+                left: 90%;
+                width: 200px;
+                padding: 0;
+            }
+        } 
+        .buttons {
+            width: 42%;
+            background-color: #813939ff;
+            div {
+                .btn {
+                    width: 6em;
+                }
+                .owl {
+                    width: 120px;
+                    top: -30px;
+                    z-index: 1;
+                }
+            }
+        }
+    }
+}

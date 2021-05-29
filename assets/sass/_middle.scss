@@ -1,0 +1,78 @@
+//Middle Section
+$red: #7d2430;
+$yellow: #efc94a;
+
+.middle{
+    position: relative;
+    width: 33%;
+    height: 100%;
+    .dumbledore
+    {
+        background: transparent;
+        border: none;
+        cursor: url("../img/magicWand.png"),auto;
+        outline: none;
+        position: absolute;
+        left: 50%;
+        top: 45%;
+        transform: translate(-50%,-50%);
+        &:hover{
+            transition: 0.6s;
+            transform: translate(-50%,-50%) scale(1.1);
+        }
+        &:active{
+            transition: 0.6s;
+            transform: translate(-50%,-50%) scale(0.9);
+        }
+    }
+    
+    .dumbleclick
+    {
+        height: 50vh;
+    }
+
+
+    //Score zone
+    .word
+    {
+        font-size: 3em;
+        color: $yellow;
+    }
+
+    #score {
+        color:#efc94a;
+        font-size: 1.8em;
+        font-family: "Harry P", sans-serif;
+        width: 2em;
+        height: 1em;
+        text-align: center;
+    }
+    
+    .wordScore
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        background-color: $red;
+        width: 300px;
+        border: 2px solid $yellow;
+        border-radius: 15px;
+        padding: 5px;
+    }
+    
+    //Timer
+    .clockDown
+    {
+        position: absolute;
+        top: 5%;
+        right: 0;
+        color: $yellow;
+        font-size: 2.5em;
+    }
+    
+}
