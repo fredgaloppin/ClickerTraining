@@ -14,17 +14,17 @@
 - [Nadja](https://github.com/Nadja-BeCode)   
 - Me
 
-Missions objectives
+### Missions objectives
 At the end of this challenge you should have improved your:
 
 JavaScript skills
 Team skills
 Git conflict skills
-The mission
+### The mission
 This challenge will have you create a clicker as a team. Follow the instructions to complete the challenge, to get some ideas check the examples in the resources section.
 cookies
 
-Instructions
+### Instructions
 NOTE: The steps below are meant to help you in development, but as long as you make a cookie clicker you can implement whatever you want.
 
 Step 1: base structure Write the base structure for the project in HTML, CSS and JavaScript. Within the HTML, put a click button which will increment a counter and a label initialised at 0 to display said counter.
