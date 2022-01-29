@@ -2,7 +2,7 @@
 // decla
 let score = 0; //score
 let incrementation= 0.0; // c'est la valuer qui va s'ajouter
-let multiplier = 1; // multiplicateur de click score
+let multiplier = 300; // multiplicateur de click score
 let priceAutoClickerRon = 25;
 let priceAutoClickerHermione = 300;
 let priceAutoClickerHarry = 1000;
@@ -91,7 +91,7 @@ let dobbyCount = 0;
     buttonX2.addEventListener("click", () =>{
 
         minScore(priceButtonX2);
-        scoreTitle.innerHTML = score.toFixed(1);
+        scoreTitle.innerHTML = score.toFixed(0);
         priceButtonX2 = Math.floor(priceButtonX2 * 3);
         let displayPrice = buttonX2.getElementsByClassName("price"); 
         displayPrice[0].children[0].textContent = priceButtonX2;// changer dans le html
@@ -103,7 +103,7 @@ let dobbyCount = 0;
     //  bonus x20 on click
         timedCount.addEventListener("click", () =>{
         minScore(priceBonus);
-        scoreTitle.innerHTML = score.toFixed(1);
+        scoreTitle.innerHTML = score.toFixed(0);
         priceBonus = Math.floor(priceBonus * 5);
         let timeElm = document.getElementById('timedCount');
         let displayPrice = timeElm.getElementsByClassName("price"); 
@@ -131,7 +131,7 @@ let dobbyCount = 0;
     function disabled(){    
         let buttonClick = document.querySelectorAll(".clickModif")
         buttonClick.forEach(button =>{
-            if (parseInt(button.children[2].innerHTML) < 16){
+            if (parseInt(button.children[2].innerHTML) < 3){
                 if (parseFloat(button.children[1].children[0].innerHTML) <= parseFloat(score)){
                     button.classList.remove("disabled")
                     button.disabled = false;
@@ -154,7 +154,7 @@ let dobbyCount = 0;
 
     // display avatar
     function add(perso){
-        document.getElementById(perso+"Section").innerHTML += '<img src="./assets/img/'+perso +'.png" alt="">';
+        document.getElementById(perso+"Section").innerHTML += '<img src="./assets/img/'+perso +'.png" alt="caracter drawing">';
     }
 
 //----------player sound-----------
