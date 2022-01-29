@@ -1,8 +1,8 @@
 
 // decla
-let score = 0.0; //score
+let score = 0; //score
 let incrementation= 0.0; // c'est la valuer qui va s'ajouter
-let multiplier = 100; // multiplicateur de click score
+let multiplier = 1; // multiplicateur de click score
 let priceAutoClickerRon = 25;
 let priceAutoClickerHermione = 300;
 let priceAutoClickerHarry = 1000;
@@ -77,13 +77,13 @@ let dobbyCount = 0;
     // on click
     document.getElementById("click").addEventListener("click", () =>{
         score += multiplier;
-        scoreTitle.innerHTML = score.toFixed(1);
+        scoreTitle.innerHTML = score.toFixed(0);
     })
 
     // --------------------------------
     setInterval( () =>{
         score += incrementation;
-        scoreTitle.innerHTML = score.toFixed(1);
+        scoreTitle.innerHTML = score.toFixed(0);
         disabled();
     }, 100);
 
