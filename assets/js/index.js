@@ -2,7 +2,7 @@
 // decla
 let score = 0; //score
 let incrementation= 0.0; // c'est la valuer qui va s'ajouter
-let multiplier = 300; // multiplicateur de click score
+let multiplier = 2; // multiplicateur de click score
 let priceAutoClickerRon = 25;
 let priceAutoClickerHermione = 300;
 let priceAutoClickerHarry = 1000;
